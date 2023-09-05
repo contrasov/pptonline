@@ -1,0 +1,144 @@
+body {
+    font-family: 'Outfit', sans-serif; /* Define 'Outfit' como a fonte padrão */
+    background-image: url("/src/background/3.png");
+    justify-content: center; /* Centralize horizontalmente */
+    align-items: center; /* Centralize verticalmente */
+}
+
+/* Estilos para .fundo padrão */
+.fundo {
+    background-color: #111111;
+    margin: auto;
+}
+
+/* Media query para telas pequenas (até 768px de largura ou 1366px de altura) */
+@media (max-width: 768px), (max-height: 1366px) {
+    .fundo {
+        margin-left: 5px; /* Aumente o valor da margem esquerda para celular */
+        margin-right: 5px; /* Aumente o valor da margem direita para celular */
+    }
+}
+
+/* Media query para telas médias (768px a 1366px de largura) */
+@media (min-width: 769px) and (max-width: 1366px) {
+    .fundo {
+        margin-left: 250px;
+        margin-right: 250px;
+    }
+}
+
+/* Media query para telas grandes (acima de 1366px de largura) */
+@media (min-width: 1367px) {
+    .fundo {
+        margin-left: 400px;
+        margin-right: 400px;
+    }
+}
+
+
+
+/* Estilos para a navbar */
+.navbar {
+    background-color: #33333300;
+    overflow: hidden;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    border-radius: 2px;
+    background-color: #0fcecd;
+    color: black;
+}
+
+/* Estilos para a classe container */
+.container {
+    text-align: center;
+    padding: 50px;
+    margin: 50px auto; /* Margem de 50px no topo/baixo e automática nas laterais */
+    max-width: 800px; /* Define a largura máxima para o conteúdo */
+}
+
+.container p {
+    color: white;
+    font-size: 20px;
+    text-align: left; /* Centraliza o texto horizontalmente */
+    line-height: 1.5; /* Espaçamento entre as linhas */
+}
+
+.container h2 {
+    color: #f5c247;
+    font-size: 24px;
+    text-align: left; /* Centraliza o texto horizontalmente */
+}
+
+
+
+.container button {
+    background-color: #282828;
+    color: white;
+    border: 2px solid #ccc;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 6px;
+}
+
+
+
+.container button:hover {
+    background-color: #09b0f1;
+    color: black;
+}
+
+/* Estilos para a seção de notas de atualização */
+
+.patch-note2 {
+    border-radius: 6px;
+    background-color: #111111;
+    padding: 20px;
+    margin: 20px;
+    border: 2px solid #ccc;
+}
+
+.patch-note2 h3 {
+    color: #0fcecd;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.patch-note2 ul {
+    color: white;
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.patch-note2 p {
+    color: #f5c247;
+}
+
+/* Estilos para o cabeçalho */
+header {
+    background-color: #ffffff00;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 20px;
+}
+
+header p {
+    margin-right: 20px;
+}
+
+/* Estilos gerais para links */
+a {
+    text-decoration: none;
+    color: #007bff;
+}

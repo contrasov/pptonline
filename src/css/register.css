@@ -1,0 +1,215 @@
+body {
+    font-family: 'Outfit', sans-serif; /* Define 'Outfit' como a fonte padrão */
+    background-image: url("/src/background/3.png");
+    justify-content: center; /* Centralize horizontalmente */
+    align-items: center; /* Centralize verticalmente */
+}
+
+/* Estilos para .fundo padrão */
+.fundo {
+    background-color: #111111;
+    margin: auto;
+}
+
+/* Media query para telas pequenas (até 768px de largura ou 1366px de altura) */
+@media (max-width: 768px), (max-height: 1366px) {
+    .fundo {
+        margin-left: 5px; /* Aumente o valor da margem esquerda para celular */
+        margin-right: 5px; /* Aumente o valor da margem direita para celular */
+    }
+}
+
+/* Media query para telas médias (768px a 1366px de largura) */
+@media (min-width: 769px) and (max-width: 1366px) {
+    .fundo {
+        margin-left: 300px;
+        margin-right: 300px;
+    }
+}
+
+/* Media query para telas grandes (acima de 1366px de largura) */
+@media (min-width: 1367px) {
+    .fundo {
+        margin-left: 400px;
+        margin-right: 400px;
+    }
+}
+
+
+
+/* Estilos para a navbar */
+.navbar {
+    background-color: #33333300;
+    overflow: hidden;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    border-radius: 2px;
+    background-color: #0fcecd;
+    color: black;
+}
+
+/* Estilos para a classe container */
+.container {
+    text-align: center;
+    padding: 50px;
+    margin: 50px auto; /* Margem de 50px no topo/baixo e automática nas laterais */
+    max-width: 800px; /* Define a largura máxima para o conteúdo */
+}
+
+.container p {
+    color: white;
+    font-size: 20px;
+    text-align: left; /* Centraliza o texto horizontalmente */
+    line-height: 1.5; /* Espaçamento entre as linhas */
+}
+
+.container h2 {
+    color: #f5c247;
+    font-size: 24px;
+    text-align: left; /* Centraliza o texto horizontalmente */
+}
+
+
+
+.container button {
+    background-color: #282828;
+    color: white;
+    border: 2px solid #ccc;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 6px;
+}
+
+
+
+.container button:hover {
+    background-color: #09b0f1;
+    color: black;
+}
+
+/* Estilos para a seção de notas de atualização */
+
+.patch-note2 {
+    border-radius: 6px;
+    background-color: #111111;
+    padding: 20px;
+    margin: 20px;
+    border: 2px solid #ccc;
+}
+
+.patch-note2 h3 {
+    color: #0fcecd;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.patch-note2 ul {
+    color: white;
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.patch-note2 p {
+    color: #f5c247;
+}
+
+/* Estilos para o cabeçalho */
+header {
+    background-color: #ffffff00;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 20px;
+    margin-left: 10px;
+}
+
+header p {
+    margin-right: 20px;
+}
+
+/* Estilos gerais para links */
+a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+/* Estilo básico para os ícones */
+.icones a {
+    margin-right: 20px; /* Espaçamento entre os ícones */
+    font-size: 32px; /* Tamanho dos ícones */
+    color: #ffffff; /* Cor dos ícones (pode personalizar) */
+}
+
+/* Estilo de hover para os ícones (opcional) */
+.icones a:hover {
+    color: #0077B5; /* Cor ao passar o mouse sobre o LinkedIn */
+}
+
+.icones a:hover i.fa-discord {
+    color: #7289DA; /* Cor ao passar o mouse sobre o Discord */
+}
+
+.icones a:hover i.fa-twitter {
+    color: #1DA1F2; /* Cor ao passar o mouse sobre o Twitter */
+}
+
+.container-register {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-register h2 {
+    color: #f5c247;
+}
+
+label {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+label > span {
+    width: 100px; /* Largura do espaço para o nome de usuário e senha */
+    text-align: right; /* Alinhe o texto à direita para o rótulo */
+    margin-right: 10px; /* Adicione algum espaço à direita para separar o rótulo do campo de entrada */
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 200px;
+    padding: 5px;
+    margin-bottom: 6px;
+    border-radius: 6px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 16px;
+    border-radius: 6px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
